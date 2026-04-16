@@ -60,3 +60,31 @@ A full-stack task management application built for Backend Developer Internship 
 ```bash
 backend/
 frontend/
+
+Setup Instructions
+Clone Repository
+git clone <your-repo-url>
+cd Primetrade
+Backend Setup
+cd backend
+npm install
+npm run dev
+
+Create .env
+
+PORT=3000
+MONGO_URI=your_mongodb_url
+JWT_SECRET=your_secret
+Frontend Setup
+cd frontend
+npm install
+npm run dev
+API Documentation
+
+Open:
+
+http://localhost:3000/api-docs
+
+Screenshots
+
+Add screenshots here after project completion.
