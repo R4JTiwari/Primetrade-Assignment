@@ -85,6 +85,24 @@ Open:
 
 http://localhost:3000/api-docs
 
-Screenshots
 
-Add screenshots here after project completion.
+# Scalability Note
+
+This project is built with a modular architecture for future scalability.
+
+## Possible Improvements
+
+### 1. Microservices
+Authentication, task management, and admin services can be separated into independent services.
+
+### 2. Caching
+Redis can be used to cache frequently requested task data and reduce database load.
+
+### 3. Load Balancing
+Multiple backend instances can run behind a load balancer such as Nginx.
+
+### 4. Database Scaling
+MongoDB Atlas replica sets and sharding can be used for high traffic systems.
+
+### 5. Logging & Monitoring
+Winston, Morgan, and Prometheus/Grafana can be integrated for production monitoring.

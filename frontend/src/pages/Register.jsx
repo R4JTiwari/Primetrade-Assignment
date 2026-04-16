@@ -23,27 +23,61 @@ export default function Register() {
     }
   };
 
-  return (
+   return (
     <div className="container">
-      <form className="card" onSubmit={submit}>
+      <div className="card">
         <h2>Register</h2>
+
         {msg && <p>{msg}</p>}
 
-        <input placeholder="Name"
-          onChange={(e)=>setForm({...form,name:e.target.value})}
-        />
+        <form onSubmit={submit} className="auth-form">
+          <input
+            type="text"
+            placeholder="Name"
+            value={form.name}
+            onChange={(e) =>
+              setForm({
+                ...form,
+                name: e.target.value
+              })
+            }
+          />
 
-        <input placeholder="Email"
-          onChange={(e)=>setForm({...form,email:e.target.value})}
-        />
+          <input
+            type="email"
+            placeholder="Email"
+            value={form.email}
+            onChange={(e) =>
+              setForm({
+                ...form,
+                email: e.target.value
+              })
+            }
+          />
 
-        <input type="password" placeholder="Password"
-          onChange={(e)=>setForm({...form,password:e.target.value})}
-        />
+          <input
+            type="password"
+            placeholder="Password"
+            value={form.password}
+            onChange={(e) =>
+              setForm({
+                ...form,
+                password: e.target.value
+              })
+            }
+          />
 
-        <button>Register</button>
-        <Link to="/">Already have account?</Link>
-      </form>
+          <div className="auth-actions">
+            <button type="submit">
+              Register
+            </button>
+
+            <Link className="auth-link" to="/">
+              Already have account?
+            </Link>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

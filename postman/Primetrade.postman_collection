@@ -1,0 +1,288 @@
+{
+  "info": {
+    "_postman_id": "f600321f-e4f8-4ba9-93c6-e5ff710331ec",
+    "name": "Primetrade",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41733725",
+    "_collection_link": "https://go.postman.co/collection/41733725-f600321f-e4f8-4ba9-93c6-e5ff710331ec?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3000/api/v1/auth/register",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\":\"Raj23\",\r\n  \"email\":\"raj23@gmail.com\",\r\n  \"password\":\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/v1/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/v1/auth/login",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\":\"raj23@gmail.com\",\r\n  \"password\":\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/v1/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/v1/users/profile",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTBkMDk1YzMwNWE4M2JlZDY4NjVmNSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjM0MjM3NywiZXhwIjoxNzc2NDI4Nzc3fQ.-MojK6Z30YJfbSH1N5btHUMX-_KnyF8lfw0gi1Rq100",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/users/profile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "users",
+            "profile"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:3000/api/v1/users/all",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTBkMDk1YzMwNWE4M2JlZDY4NjVmNSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjM0MjM3NywiZXhwIjoxNzc2NDI4Nzc3fQ.-MojK6Z30YJfbSH1N5btHUMX-_KnyF8lfw0gi1Rq100",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v1/users/all",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "users",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:3000/api/v1/users/69e0d5d245db2be7524cde73",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTBkMDk1YzMwNWE4M2JlZDY4NjVmNSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjM0MjM3NywiZXhwIjoxNzc2NDI4Nzc3fQ.-MojK6Z30YJfbSH1N5btHUMX-_KnyF8lfw0gi1Rq100",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v1/users/69e0d5d245db2be7524cde73",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "users",
+            "69e0d5d245db2be7524cde73"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:3000/api/v1/tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTBkOGVmY2Y5Zjk4NGU4OTJiNzg1OSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc2MzQzMjgzLCJleHAiOjE3NzY0Mjk2ODN9.Xrz29o5NfXHsdkpL2N2tL7_8X7FXSK51eI63rvLb3mw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\":\"Build Backend\",\r\n  \"description\":\"Complete assignment APIs\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/api/v1/tasks",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:3000/api/v1/tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTBkOGVmY2Y5Zjk4NGU4OTJiNzg1OSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc2MzQzMjgzLCJleHAiOjE3NzY0Mjk2ODN9.Xrz29o5NfXHsdkpL2N2tL7_8X7FXSK51eI63rvLb3mw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v1/tasks",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:3000/api/v1/tasks/:id",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTBkOGVmY2Y5Zjk4NGU4OTJiNzg1OSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc2MzQzMjgzLCJleHAiOjE3NzY0Mjk2ODN9.Xrz29o5NfXHsdkpL2N2tL7_8X7FXSK51eI63rvLb3mw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/api/v1/tasks/:id",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "tasks",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "69e0d91fcf9f984e892b785a"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -19,23 +19,36 @@ export default function Login() {
     }
   };
 
-  return (
-    <div className="container">
-      <form className="card" onSubmit={submit}>
-        <h2>Login</h2>
-        {msg && <p>{msg}</p>}
+ return (
+  <div className="container">
+    <div className="card">
+      <h2>Login</h2>
 
-        <input placeholder="Email"
-          onChange={(e)=>setForm({...form,email:e.target.value})}
+      <form onSubmit={submit} className="auth-form">
+        <input
+          placeholder="Email"
+          onChange={(e) =>
+            setForm({ ...form, email: e.target.value })
+          }
         />
 
-        <input type="password" placeholder="Password"
-          onChange={(e)=>setForm({...form,password:e.target.value})}
+        <input
+          type="password"
+          placeholder="Password"
+          onChange={(e) =>
+            setForm({ ...form, password: e.target.value })
+          }
         />
 
-        <button>Login</button>
-        <Link to="/register">Create account</Link>
+        <div className="auth-actions">
+          <button type="submit">Login</button>
+
+          <Link className="auth-link" to="/register">
+            Create account
+          </Link>
+        </div>
       </form>
     </div>
-  );
+  </div>
+);
 }

@@ -160,3 +160,60 @@ button:hover {
     font-size: 26px;
   }
 }
+
+.auth-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.auth-actions button {
+  width: 100%;
+}
+
+.auth-link {
+  text-align: center;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Auth Forms */
+.card form,
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card form input,
+.auth-form input {
+  margin: 0;
+}
+
+.auth-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.auth-actions button {
+  width: 100%;
+}
+
+.auth-link {
+  text-align: center;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
